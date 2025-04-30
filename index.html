@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Research Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>ISU Digital Repository RAG</h1>
+        </div>
+        
+        <div class="messages-container" id="messages">
+            <!-- Messages will appear here -->
+        </div>
+        
+
+        <div class="input-container">
+            <textarea id="user-input" placeholder="Ask me anything..."></textarea>
+            <button id="send-button">
+                <!-- Send button icon -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.01 21L23 12 2.01 3 2 10L17 12 2 14Z" fill="currentColor"/>
+                </svg>
+            </button>
+            <!-- File upload button -->
+            <input type="file" id="file-upload" style="display: none;" />
+            <button id="upload-button">Upload File</button>
+        </div>
+        
+        
+        <div class="suggested-queries">
+            <h3>Suggested questions</h3>
+            <div class="query-buttons">
+                <button class="query-btn">Can you explain step by step this [concept]</button>
+                <button class="query-btn">Can you give me a set of research papers regarding metamorphic testing and cite their sources</button>
+                <button class="query-btn">Summarize the latest document I added</button>
+                <button class="query-btn">What can you tell me about [document topic]?</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>Created by Blessing Ngara | April 9, 2025</p>
+    </footer>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
